@@ -664,17 +664,14 @@ body.scroll-off {
   margin-left: 6px;
   color: #01d760;
 }
-.menu-review-area .orderer-img-area {
+.menu-review-area .ordered-img-area {
   padding-bottom: 22px;
   background-color: #fff;
 }
-.menu-review-area .orderer-img-area .title {
+.menu-review-area .ordered-img-area .title {
   padding: 6px 18px 12px;
 }
 .menu-review-area .orderer-pic-list {
-  display: flex;
-}
-.menu-review-area .orderer-pic-item {
   display: flex;
 }
 .menu-review-area .orderer-pic-item + .orderer-pic-item {
@@ -688,7 +685,6 @@ body.scroll-off {
 }
 .menu-review-area .orderer-pic-link {
   position: relative;
-  display: flex;
 }
 .menu-review-area .orderer-pic-link::after {
   content: "";
@@ -714,6 +710,7 @@ body.scroll-off {
   border-bottom: 1px solid #f2f4f6;
 }
 .menu-review-area .review-star {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -729,14 +726,14 @@ body.scroll-off {
   height: 13px;
   background: url("../images/ico-star-group.svg") no-repeat center left;
 }
-.menu-review-area .ico-star-group-fill {
+.menu-review-area .ico-star-group-fiil {
   position: absolute;
   top: 0;
   left: 0;
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url("../images/ico-star-group-fill.svg") no-repeat center left;
+  background: url("../images/ico-star-group.svg") no-repeat center left;
 }
 .menu-review-area .review-text {
   margin-top: 4px;
@@ -751,7 +748,7 @@ body.scroll-off {
 }
 .menu-review-area .review-date::before {
   content: "";
-  display: inline-block;
+  position: absolute;
   margin: 0 8px;
   width: 1px;
   height: 12px;
@@ -766,7 +763,7 @@ body.scroll-off {
   height: 50px;
   font-size: 16px;
   font-weight: 500;
-  color: #424242;
+  color: #fff;
 }
 .menu-review-area .btn-more::after {
   content: "";
@@ -893,13 +890,13 @@ body.scroll-off {
   margin-right: 8px;
   padding: 0 4px;
   border-radius: 3px;
-  background-color: #d0d0d0;
+  background-color: #000;
   line-height: 17px;
   font-size: 13px;
   color: #fff;
 }
 .option-popup-area .content-body .option-title .badge.required {
-  background-color: #000;
+  background-color: #d0d0d0;
 }
 .option-popup-area .content-body .option-title .desc {
   margin-top: 2px;
